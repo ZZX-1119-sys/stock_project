@@ -222,3 +222,6 @@ __marimo__/
 # 数据文件（太大，不传）
 data/*.csv
 data/*.parquet
+
+# VS Code 个人配置
+.vscode/
