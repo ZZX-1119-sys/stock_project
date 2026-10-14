@@ -1,0 +1,26 @@
+data:
+  start_date: '2020-01-01'
+  end_date: '2024-12-31'
+  stock_count: 298
+  total_records: 326512
+  train_records: 223846
+  val_records: 51289
+  test_records: 51377
+  feature_cols: ['open','high','low','close','volume','amount','pctChg','macd','macd_signal','rsi','boll_upper','boll_lower','log_ret','volatility_60']
+  target_col: 'close'
+  lookback_len: 96
+  pred_len: 1
+  train_ratio: 0.7
+  val_ratio: 0.15
+  test_ratio: 0.15
+  seed: 42
+
+train:
+  batch_size: 32
+  learning_rate: 0.001
+  epochs: 50
+  optimizer: 'Adam'
+  loss: 'MSE'
+
+eval:
+  metrics: ['rmse', 'mae']
