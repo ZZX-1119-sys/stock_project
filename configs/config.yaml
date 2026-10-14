@@ -1,18 +1,27 @@
 data:
-  start_date: '2020-01-01'
-  end_date: '2024-12-31'
-  stock_count: 298
-  total_records: 326512
-  train_records: 223846
-  val_records: 51289
-  test_records: 51377
+  a_stock:
+    stock_count: 297
+    total_records: 326512
+    train_records: 223846
+    val_records: 51289
+    test_records: 51377
+    start_date: '2020-04-03'
+    end_date: '2024-12-31'
+  us_stock:
+    stock_count: 493
+    total_records: 564599
+    train_records: 389924
+    val_records: 86775
+    test_records: 87900
+    start_date: '2020-01-01'
+    end_date: '2024-12-31'
+  combined:
+    total_records: 891111
+    stock_count: 790
   feature_cols: ['open','high','low','close','volume','amount','pctChg','macd','macd_signal','rsi','boll_upper','boll_lower','log_ret','volatility_60']
   target_col: 'close'
   lookback_len: 96
   pred_len: 1
-  train_ratio: 0.7
-  val_ratio: 0.15
-  test_ratio: 0.15
   seed: 42
 
 train:
