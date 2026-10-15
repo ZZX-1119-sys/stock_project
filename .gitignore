@@ -225,3 +225,9 @@ data/*.parquet
 
 # VS Code 个人配置
 .vscode/
+
+# 实验产出图
+figures/
+
+# PyCharm IDE 配置
+.idea/
