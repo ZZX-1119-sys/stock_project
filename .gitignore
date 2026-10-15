@@ -231,3 +231,6 @@ figures/
 
 # PyCharm IDE 配置
 .idea/
+
+# 数据压缩包
+*.zip
